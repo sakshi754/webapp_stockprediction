@@ -2,5 +2,5 @@ streamlit
 yfinance
 numpy
 pandas
-sci-kit learn
+scikit-learn
 matplotlib
