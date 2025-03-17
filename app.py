@@ -1,21 +1,3 @@
-import subprocess
-import sys
-
-# Function to install missing packages
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# List of required libraries
-required_packages = ["streamlit", "yfinance", "numpy", "pandas", "scikit-learn", "matplotlib"]
-
-# Install missing packages
-for package in required_packages:
-    try:
-        __import__(package)
-    except ImportError:
-        print(f"Installing {package}...")
-        install(package)
-
 import streamlit as st
 import yfinance as yf
 import numpy as np
